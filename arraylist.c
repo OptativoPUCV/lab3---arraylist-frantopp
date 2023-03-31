@@ -56,7 +56,7 @@ void* get(ArrayList * lista, int i){
 }
 
 int get_size(ArrayList * lista){
-    return l->size;
+    return lista->size;
 }
 
 //remove elements
