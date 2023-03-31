@@ -77,3 +77,13 @@ Fri 31 Mar 2023 06:29:44 PM UTC:
  tests:  5|3
 total_score: 30/70
 a277859
+Fri 31 Mar 2023 06:38:36 PM UTC: 
+ arraylist.c | 12 +++++++-----
+ 1 file changed, 7 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘get’:
+arraylist.c:51:9: error: expected expression before ‘if’
+   51 |     if (if >= lista->size) return NULL;
+      |         ^~
+Compilation failed
+571403a

@@ -47,16 +47,18 @@ void push(ArrayList * lista, void * data, int i){
     return;
 }
 
-void* pop(ArrayList * lista, int i){
-    return NULL;
-}
-
 void* get(ArrayList * lista, int i){
-    return NULL;
+    if (if >= lista->size) return NULL;
+    if (i < 0) i = i+lista->size;
+  return lista->data[i];
 }
 
 int get_size(ArrayList * lista){
     return lista->size;
+}
+
+void* pop(ArrayList * lista, int i){
+    return NULL;
 }
 
 //remove elements
