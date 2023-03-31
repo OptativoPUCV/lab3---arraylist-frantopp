@@ -17,7 +17,7 @@ ArrayList *createList(void) {
     lista->data = (void *) calloc(2,sizeof(void));
     lista->capacity = 2;
     lista->size = 0;
-    return l;
+    return lista;
 }
 
 void append(ArrayList * l, void * data){
