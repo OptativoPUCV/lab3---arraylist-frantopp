@@ -93,3 +93,14 @@ Fri 31 Mar 2023 06:39:01 PM UTC:
  tests:  8|2
 total_score: 40/70
 14d849e
+Fri 31 Mar 2023 06:39:26 PM UTC: 
+ arraylist.c | 14 +++++++++++++-
+ 1 file changed, 13 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:61:13: error: ‘l’ undeclared (first use in this function)
+   61 |     if(i >= l->size || i < l->size * (-1) || l->size == 0) return NULL;
+      |             ^
+arraylist.c:61:13: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+75a5d86
