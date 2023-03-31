@@ -87,3 +87,9 @@ arraylist.c:51:9: error: expected expression before ‘if’
       |         ^~
 Compilation failed
 571403a
+Fri 31 Mar 2023 06:39:01 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  8|2
+total_score: 40/70
+14d849e

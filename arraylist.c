@@ -48,7 +48,7 @@ void push(ArrayList * lista, void * data, int i){
 }
 
 void* get(ArrayList * lista, int i){
-    if (if >= lista->size) return NULL;
+    if (i >= lista->size) return NULL;
     if (i < 0) i = i+lista->size;
   return lista->data[i];
 }
