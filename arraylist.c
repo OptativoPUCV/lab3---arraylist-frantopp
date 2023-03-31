@@ -21,12 +21,12 @@ ArrayList *createList(void) {
 }
 
 void append(ArrayList * l, void * data){
-  if (l->size == l->capacity){
-        l->capacity = l->capacity * 2;
-        l->data = (void **)realloc (l->data, l->capacity*sizeof(void *));
+  if (lista->size == lista->capacity){
+        lista->capacity = lista->capacity * 2;
+        lista->data = (void **)realloc (lista->data, lista->capacity*sizeof(void *));
     }
-    l->data[l->size] = data;
-    l->size++;
+    lista->data[lista->size] = data;
+    lista->size++;
     return;
 }
 

@@ -39,3 +39,14 @@ Fri 31 Mar 2023 06:20:30 PM UTC:
  tests:  3|4
 total_score: 20/70
 ffb8e16
+Fri 31 Mar 2023 06:23:00 PM UTC: 
+ arraylist.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:24:7: error: ‘lista’ undeclared (first use in this function)
+   24 |   if (lista->size == lista->capacity){
+      |       ^~~~~
+arraylist.c:24:7: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+6958ffe
