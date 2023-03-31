@@ -30,23 +30,36 @@ void append(ArrayList * lista, void * data){
     return;
 }
 
-void push(ArrayList * l, void * data, int i){
-
+void push(ArrayList * lista, void * data, int i){
+  if(i > lista->size) return;
+  
+    if (lista->size == lista->capacity){
+        lista->capacity *= 2;
+        lista->data = (void **) realloc (lista->data, lista->capacity*sizeof(void*));
+    }
+  
+    for(int j = lista->size; j > i; j--){
+      lista->data[j] = lista->data[j-1];
+    }
+  
+    lista->data[i] = data;
+    lista->size++;
+    return;
 }
 
-void* pop(ArrayList * l, int i){
+void* pop(ArrayList * lista, int i){
     return NULL;
 }
 
-void* get(ArrayList * l, int i){
+void* get(ArrayList * lista, int i){
     return NULL;
 }
 
-int get_size(ArrayList * l){
+int get_size(ArrayList * lista){
     return l->size;
 }
 
 //remove elements
-void clean(ArrayList * l){
+void clean(ArrayList * lista){
     
 }
